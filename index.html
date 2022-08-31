@@ -33,7 +33,10 @@
                 <input type="number" id="age" name="age" value=""><br>
                 
                 <h2 class="bmi_result">BMI RESULT</h2>
-                <button type="submit" form="container_form">Calculate BMI</button>
+                <button onclick="calculateBMI()" id="calculate" type="button" form="container_form">Calculate BMI</button>
+                <p>
+                <div id="bmi_metric_result"></div> <br> <div id="bmi_imperial_result"></div> <br> 
+                </p>
             </form>
 
         </div>
