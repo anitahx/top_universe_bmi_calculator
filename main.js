@@ -1,15 +1,12 @@
-let buttons = document.getElementById(btn)
+function calculateBMI () {
 
-buttons.addEventListener("click", () => { const heightM = document.getElementById('height1').value;
-
-const height_inches = document.getElementById('height2').value; const weight = document.getElementById('weight').value;
-
-let MetricR= (weight/(heightM heightM));
-
-let ImperialR (703* (weight/(height_inches* height In)))
-
-document.getElementById("Metric").textContent =MetricR; document.getElementById("Imperial").textContent =ImperialR;
-
-console.log(MetricR); console.log(ImperialR);
-
-})
+    heightMeters = document.getElementById('height_meters').value; 
+    heightInches = document.getElementById('height_inches').value; 
+    weight = document.getElementById("weight").value;
+    heightMeters = document.getElementById('height_meters').value; 
+    heightMeters = document.getElementById('height_inches').value; 
+    weight = document.getElementById("weight").value;
+    
+    document.getElementById('bmi_metric_result').innerHTML = (weight/ (heightMeters * heightMeters))
+    document.getElementById('bmi_imperial_result').innerHTML = (783 * (weight/ heightInches * heightInches))
+}
