@@ -1,12 +1,13 @@
-function calculateBMI () {
-
+const btn = document.getElementById("Calculate")
+    btn.addEventListener("click",(event) => {
+    event.preventDefault()
     heightMeters = document.getElementById('height_meters').value; 
     heightInches = document.getElementById('height_inches').value; 
     weight = document.getElementById("weight").value;
-    heightMeters = document.getElementById('height_meters').value; 
-    heightMeters = document.getElementById('height_inches').value; 
-    weight = document.getElementById("weight").value;
     
-    document.getElementById('bmi_metric_result').innerHTML = (weight/ (heightMeters * heightMeters))
-    document.getElementById('bmi_imperial_result').innerHTML = (783 * (weight/ heightInches * heightInches))
-}
+    document.getElementById('bmi_metric_result').textContent = (weight/ (heightMeters * heightMeters))
+    document.getElementById('bmi_imperial_result').textContent = (783 * (weight/ heightInches * heightInches))
+
+    console.log(bmi_metric_result)
+    console.log(bmi_imperial_result)
+})
