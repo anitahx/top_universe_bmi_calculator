@@ -1,1 +1,1 @@
-A Functional Body Mass Culculator
+A Functional Body Mass Index Calculator
