@@ -110,3 +110,9 @@ button:hover {
     color:#1FBCDD;
     border: 1px solid #1FBCDD;
 }
+
+p {
+    font-size: small;
+    line-height: 20PX;
+    text-align: left;
+}
