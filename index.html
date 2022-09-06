@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
     <div id="container">
@@ -16,7 +15,7 @@
             <h1>TOP UNIVERSE BMI CALCULATOR</h1>
         </div>
         <div class="container_form">
-            <form action="" method="get" id="container_form">
+            <form action="" id="container_form">
                 <label for="height">Height (Feet)</label>
                 <input type="number" id="height_feet" name="height_feet" value=""><br>
                 
@@ -27,20 +26,23 @@
                 <input type="number" id="weight_kg" name="height_feet" value=""><br>
                 
                 <label for="gender">Gender</label>
-                <input type="number" id="gender" name="Gender" value=""><br>
+                <input type="text" id="gender" name="Gender" value=""><br>
                 
                 <label for="age">Age</label>
                 <input type="number" id="age" name="age" value=""><br>
                 
                 <h2 class="bmi_result">BMI RESULT</h2>
-                <button onclick="calculateBMI()" id="calculate" type="button" form="container_form">Calculate BMI</button>
-                <p>
-                <div id="bmi_metric_result"></div> <br> <div id="bmi_imperial_result"></div> <br> 
-                </p>
+                <button onclick="" id="Calculate" type="button" form="container_form">Calculate BMI</button>
+                
+                <div id="bmi_metric_result"></div><br> 
+                    <p>Imperial Results:<br></p>
+                <div id="bmi_metric_result"></div><br>
+                    <p>Metric Results:</p>
             </form>
 
         </div>
 
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
